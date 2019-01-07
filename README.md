@@ -1,4 +1,4 @@
-# 0 個 ASP&#x2E;NET Core 的範例專案
+# 1 個 ASP&#x2E;NET Core 的範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本開發方式，以簡單實作方式記錄下來。
@@ -76,7 +76,7 @@ dotnet run
 
 專案統一放在 projects 目錄中。
 
-## 專案簡介
+## 專案列表
 
 ### 001 相依性注入
 
