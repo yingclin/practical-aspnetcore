@@ -5,6 +5,7 @@
 
 ## 環境
 
+* Windows 10
 * .NET Core SDK 2.1.502
 * VS Code 1.30.x
 
@@ -46,6 +47,8 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 ```
 
+或執行 projects 目錄下的 new-web.bat，用法：`new-web <專案名稱(根 namespace)>`
+
 #### MVC 專案
 
 新增 MVC 專案
@@ -67,8 +70,16 @@ dotnet run
 * 開啟 MVC : https://localhost:5001/
 * 開啟 Web API : https://localhost:5001/api/Values
 
+#### 專案名稱規則
+* `P<序號3碼>.<專案名稱>`
+* 範例: P000.HelloAspnetCore
+
+專案統一放在 projects 目錄中。
 
 ## 專案簡介
 
+### 001 相依性注入
+
+名稱: DependencyInjection
 
 
