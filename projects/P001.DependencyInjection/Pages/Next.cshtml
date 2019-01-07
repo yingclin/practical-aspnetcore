@@ -1,16 +1,11 @@
 ﻿@page
-@model IndexModel
+@model NextModel
 @{
 }
-<h1>Index</h1>
+<h1>Next</h1>
 <h2>Service Id</h2>
 <ul>
     <li>Singleton: @Model.GetSingletonId</li>
     <li>Transient: @Model.GetTransientId</li>
 </ul>
-<form method="post">
-    <input type="submit" value="Post" />
-</form>
-
-
-<a asp-page="./Next">Next</a>
+<a asp-page="./Index">Index</a>

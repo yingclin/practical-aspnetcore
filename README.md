@@ -78,7 +78,7 @@ dotnet run
 
 ## 專案列表
 
-### 001 相依性注入
+### 001 基本相依性注入
 
 名稱: DependencyInjection
 
