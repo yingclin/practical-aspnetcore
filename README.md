@@ -80,6 +80,5 @@ dotnet run
 
 ### 001 基本相依性注入
 
-名稱: DependencyInjection
-
+ [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
 
