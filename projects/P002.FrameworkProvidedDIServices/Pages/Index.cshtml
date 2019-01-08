@@ -1,4 +1,12 @@
 ﻿@page
 @model IndexModel
 @{
+    ViewData["Title"] = "Home page";
+    Model.LogInfoTo1("Hello Logger 1");
+    Model.LogInfoTo2("Hello Logger 2");
 }
+<h1>Index</h1>
+<h2>Environment: @Model.EnvironmentName</h2>
+<h2>Logger HashCode</h2>
+<p>Logger 1: @Model.Logger1HashCode</p>
+<p>Logger 2: @Model.Logger2HashCode</p>

@@ -1,8 +1,7 @@
 # 002 平台提供的內建服務 FrameworkProvidedDIServices 
 
-對應用程式較實用的注入服務有：
+大多是系統較基礎的服務，對應用程式較實用的注入服務有：
 * Microsoft.AspNetCore.Hosting.IHostingEnvironment
-* Microsoft.AspNetCore.Http.IHttpContextFactory
 * Microsoft.Extensions.Logging.ILogger<T>
 * Microsoft.Extensions.Logging.ILoggerFactory
 

@@ -1,4 +1,4 @@
-# 1 個 ASP&#x2E;NET Core 的範例專案
+# 2 個 ASP&#x2E;NET Core 的基本功範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本開發方式，以簡單實作方式記錄下來。
@@ -84,6 +84,6 @@ dotnet run
 
 ### 002 平台提供的內建服務
 
-應用程式初始化後，即可取得一些 IServiceCollection 內建服務來用。
+應用程式初始化後，IServiceCollection 已提供一些內建服務。
 
 [FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
