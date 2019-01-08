@@ -82,3 +82,8 @@ dotnet run
 
  [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
 
+### 002 平台提供的內建服務
+
+應用程式初始化後，即可取得一些 IServiceCollection 內建服務來用。
+
+[FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
