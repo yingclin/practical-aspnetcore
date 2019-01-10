@@ -1,4 +1,4 @@
-# 2 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 3 個 ASP&#x2E;NET Core 的基本功能範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -56,15 +56,23 @@ dotnet run
 
 ### 平台基礎
 
-#### 001 基本相依性注入
+#### 相依性注入
+
+001 - 基本相依性注入
 
 * [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
 
-#### 002 平台提供的內建服務
+002 - 平台提供的內建服務
 
-應用程式初始化後，IServiceCollection 已提供一些內建服務。
+應用程式初始化後，使用 IServiceCollection 已提供一些內建服務。
 
 * [FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
+
+003 - 動態建立物件
+
+動態建立物件，並支援該物件的相依性注入。
+
+* [ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P003.ActivatorUtilities)
 
 ### Web 應用程式
 
