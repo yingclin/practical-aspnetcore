@@ -1,4 +1,4 @@
-# 3 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 5 個 ASP&#x2E;NET Core 的基本功能範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -58,6 +58,11 @@ dotnet run
 [OneHostNoStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OneHostNoStartup)
 
     WebHost 可取代 Startup 的 ConfigureServices() 和 Configure()。
+
+* 用 IStartupFilter 註冊中介軟體
+[UseIStartupFilter](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIStartupFilter)
+
+    用 IStartupFilter 註冊中介軟體，以確保在處理管線的開頭或結尾執行。   
 
 #### 相依性注入
 
