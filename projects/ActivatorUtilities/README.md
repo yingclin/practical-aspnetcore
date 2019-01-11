@@ -1,4 +1,4 @@
-# 動態建立物件 ActivatorUtilities 
+# 動態建立物件 - ActivatorUtilities 
 
 動態建立物件，並支援該物件的相依性注入，用 Reflection 是不支援 DI 的。
 
