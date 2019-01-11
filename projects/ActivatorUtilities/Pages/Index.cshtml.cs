@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace P003.ActivatorUtilities.Pages
+namespace ActivatorUtilities.Pages
 {
     public class IndexModel : PageModel
     {

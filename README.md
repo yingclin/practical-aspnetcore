@@ -6,7 +6,7 @@
 ## 環境
 
 * Windows 10
-* .NET Core SDK 2.1.502
+* .NET Core SDK 2.1.503
 * VS Code 1.30.x
 
 ### 建立專案：
@@ -46,10 +46,6 @@ dotnet run
 * 開啟 MVC : https://localhost:5001/
 * 開啟 Web API : https://localhost:5001/api/Values
 
-#### 專案名稱規則
-* `P<序號3碼>.<專案名稱>`
-* 範例: P000.HelloAspnetCore
-
 專案統一放在 projects 目錄中。
 
 ## 專案列表
@@ -58,21 +54,18 @@ dotnet run
 
 #### 相依性注入
 
-001 - 基本相依性注入
+* 基本相依性注入 - 
+[DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
 
-* [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
+* 平台提供的內建服務 - 
+[FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
 
-002 - 平台提供的內建服務
+    應用程式初始化後，使用 IServiceCollection 已提供一些內建服務。
 
-應用程式初始化後，使用 IServiceCollection 已提供一些內建服務。
+* 動態建立物件 - 
+[ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P003.ActivatorUtilities)
 
-* [FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
-
-003 - 動態建立物件
-
-動態建立物件，並支援該物件的相依性注入。
-
-* [ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P003.ActivatorUtilities)
+    動態建立物件，並支援該物件的相依性注入。
 
 ### Web 應用程式
 

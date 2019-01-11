@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace P002.FrameworkProvidedDIServices.Pages
+namespace FrameworkProvidedDIServices.Pages
 {
     public class IndexModel : PageModel
     {

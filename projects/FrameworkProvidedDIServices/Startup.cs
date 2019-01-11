@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace P002.FrameworkProvidedDIServices
+namespace FrameworkProvidedDIServices
 {
     public class Startup
     {

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace P002.FrameworkProvidedDIServices
+namespace ActivatorUtilities
 {
     public class Program
     {

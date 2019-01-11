@@ -1,4 +1,4 @@
-# 002 平台提供的內建服務 FrameworkProvidedDIServices 
+# 平台提供的內建服務 FrameworkProvidedDIServices 
 
 大多是系統較基礎的服務，對應用程式較實用的注入服務有：
 * Microsoft.AspNetCore.Hosting.IHostingEnvironment
