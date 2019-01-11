@@ -52,18 +52,25 @@ dotnet run
 
 ### 平台基礎
 
+#### 啟動
+
+* 不用 Startup.cs 
+[OneHostNoStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OneHostNoStartup)
+
+    WebHost 可取代 Startup 的 ConfigureServices() 和 Configure()。
+
 #### 相依性注入
 
 * 基本相依性注入 - 
-[DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P001.DependencyInjection)
+[DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/DependencyInjection)
 
 * 平台提供的內建服務 - 
-[FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P002.FrameworkProvidedDIServices)
+[FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FrameworkProvidedDIServices)
 
     應用程式初始化後，使用 IServiceCollection 已提供一些內建服務。
 
 * 動態建立物件 - 
-[ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/P003.ActivatorUtilities)
+[ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ActivatorUtilities)
 
     動態建立物件，並支援該物件的相依性注入。
 
