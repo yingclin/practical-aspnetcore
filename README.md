@@ -1,4 +1,4 @@
-# 5 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 6 個 ASP&#x2E;NET Core 的基本功能範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -54,30 +54,35 @@ dotnet run
 
 #### 啟動
 
-* 不用 Startup.cs 
+* 不用 Startup.cs -- 
 [OneHostNoStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OneHostNoStartup)
 
     WebHost 可取代 Startup 的 ConfigureServices() 和 Configure()。
 
-* 用 IStartupFilter 註冊中介軟體
+* 用 IStartupFilter 註冊中介軟體 -- 
 [UseIStartupFilter](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIStartupFilter)
 
     用 IStartupFilter 註冊中介軟體，以確保在處理管線的開頭或結尾執行。   
 
 #### 相依性注入
 
-* 基本相依性注入 - 
+* 基本相依性注入 -- 
 [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/DependencyInjection)
 
-* 平台提供的內建服務 - 
+* 平台提供的內建服務 -- 
 [FrameworkProvidedDIServices](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FrameworkProvidedDIServices)
 
     應用程式初始化後，使用 IServiceCollection 已提供一些內建服務。
 
-* 動態建立物件 - 
+* 動態建立物件 -- 
 [ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ActivatorUtilities)
 
     動態建立物件，並支援該物件的相依性注入。
+
+#### 路由
+
+* 使用路由中介軟體 -- 
+[UseRoutingMiddleware](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseRoutingMiddleware)
 
 ### Web 應用程式
 
