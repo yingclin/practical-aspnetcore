@@ -1,2 +1,29 @@
+@model Microsoft.AspNetCore.Routing.RouteValueDictionary
 <h1>RouteConstraint</h1>
 <h2>Index</h2>
+<h3>RouteData</h3>
+<ul>
+    @foreach (var key in Model.Keys)
+    {
+        <li>[ @key ] : @Model[key]</li>
+    }
+</ul>
+<div>
+    <h4>Product/{id:int:min(1)}</h4>
+    <p>
+        <a href="/Product/2">Product/2</a><br />
+        <a href="/Product/0">Product/0</a>
+    </p>
+    <h4>Play/{active:bool}</h4>
+    <p>
+        <a href="/Play/true">Play/true</a><br />
+        <a href="/Play/AAA">Play/AAA</a>
+    </p>
+    <h4>AddUser/{username:minlength(2):maxlength(20)}</h4>
+    <p>
+        <a href="/AddUser/a">AddUser/a - (1)</a><br />
+        <a href="/AddUser/ab">AddUser/ab - (2)</a><br />
+        <a href="/AddUser/abcdefghijklmnopqrst">AddUser/abcdefghijklmnopqrst - (20)</a><br />
+        <a href="/AddUser/abcdefghijklmnopqrstu">/AddUser/abcdefghijklmnopqrstu - (21)</a>
+    </p>
+</div>
