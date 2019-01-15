@@ -87,6 +87,9 @@ dotnet run
 * 用 DataTokens 定義路由屬性 -- 
 [UsingRouteDataTokens](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UsingRouteDataTokens)  
 
+* 路由的條件約束 -- 
+[RouteConstraint](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/RouteConstraint)  
+
 ### Web 應用程式
 
 ### Web API
