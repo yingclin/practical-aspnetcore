@@ -6,8 +6,11 @@ namespace UsingRouteDataTokens.Controllers
     {
         public IActionResult Index()
         {
-          //TODO: Implement Realistic Implementation
-          return View();
+            // 取得 DataTokens 的值,名稱:Name
+            var nameTokenValue = RouteData.DataTokens["Name"];
+            ViewBag.TokenName = nameTokenValue;
+
+            return View();
         }
     }
 }

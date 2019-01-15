@@ -25,12 +25,16 @@ namespace UsingRouteDataTokens
             }
 
             app.UseStaticFiles();
-             
+
+            // 設定一個屬性,名稱:Name,值:default_route
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}",
+                    defaults: null,
+                    constraints: null,
+                    dataTokens: new { Name = "default_route" });
             });
         }
     }

@@ -1,4 +1,4 @@
-# 6 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 7 個 ASP&#x2E;NET Core 的基本功能範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -81,8 +81,11 @@ dotnet run
 
 #### 路由
 
-* 使用路由中介軟體 -- 
+* 啟用路由中介軟體 -- 
 [UseRoutingMiddleware](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseRoutingMiddleware)
+
+* 用 DataTokens 定義路由屬性 -- 
+[UsingRouteDataTokens](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UsingRouteDataTokens)  
 
 ### Web 應用程式
 
