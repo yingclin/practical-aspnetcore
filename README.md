@@ -1,4 +1,4 @@
-# 7 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 8 個 ASP&#x2E;NET Core 的基本功能範例專案
 
 ## 目的
 把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
