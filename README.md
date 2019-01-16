@@ -1,7 +1,7 @@
-# 8 個 ASP&#x2E;NET Core 的基本功能範例專案
+# 9 個 ASP&#x2E;NET Core 的基本功 範例專案
 
 ## 目的
-從官方文件出發，把看到的用到的 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
+從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
 
 ## 環境
 
@@ -89,6 +89,15 @@ dotnet run
 
 * 路由的條件約束 -- 
 [RouteConstraint](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/RouteConstraint)  
+
+#### 執行環境
+
+應用程式啟動時會讀取 ASPNETCORE_ENVIRONMENT 環境變數，可利用它來客製執行環境。
+
+平台預設支援下列三個值：Development、Staging 和 Production。如果未設定 ASPNETCORE_ENVIRONMENT，則預設為 Production。
+
+* 本機開發設定值 -- 
+[LaunchSettings](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/LaunchSettings)
 
 ### Web 應用程式
 
