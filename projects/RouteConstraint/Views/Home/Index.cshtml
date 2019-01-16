@@ -11,19 +11,26 @@
 <div>
     <h4>Product/{id:int:min(1)}</h4>
     <p>
-        <a href="/Product/2">Product/2</a><br />
-        <a href="/Product/0">Product/0</a>
+        <a href="~/Product/2">Product/2</a><br />
+        <a href="~/Product/0">Product/0</a>
     </p>
     <h4>Play/{active:bool}</h4>
     <p>
-        <a href="/Play/true">Play/true</a><br />
-        <a href="/Play/AAA">Play/AAA</a>
+        <a href="~/Play/true">Play/true</a><br />
+        <a href="~/Play/AAA">Play/AAA</a>
     </p>
     <h4>AddUser/{username:minlength(2):maxlength(20)}</h4>
     <p>
-        <a href="/AddUser/a">AddUser/a - (1)</a><br />
-        <a href="/AddUser/ab">AddUser/ab - (2)</a><br />
-        <a href="/AddUser/abcdefghijklmnopqrst">AddUser/abcdefghijklmnopqrst - (20)</a><br />
-        <a href="/AddUser/abcdefghijklmnopqrstu">/AddUser/abcdefghijklmnopqrstu - (21)</a>
+        <a href="~/AddUser/a">AddUser/a - (1)</a><br />
+        <a href="~/AddUser/ab">AddUser/ab - (2)</a><br />
+        <a href="~/AddUser/abcdefghijklmnopqrst">AddUser/abcdefghijklmnopqrst - (20)</a><br />
+        <a href="~/AddUser/abcdefghijklmnopqrstu">/AddUser/abcdefghijklmnopqrstu - (21)</a>
+    </p>
+    <h4>Action/{action:regex(^(list|get|create)$)}</h4>
+    <p>
+        <a href="~/Action/list">Action/list</a><br />
+        <a href="~/Action/get">Action/get</a><br />
+        <a href="~/Action/create">Action/create</a><br />
+        <a href="~/Action/delete">Action/delete</a>
     </p>
 </div>

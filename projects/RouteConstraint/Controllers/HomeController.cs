@@ -21,7 +21,7 @@ namespace RouteConstraint.Controllers
         // active => 為bool(true,FALSE)
         [Route("Play/{active:bool}")]
 
-        public IActionResult IsGirl()
+        public IActionResult Play()
         {
             // 不利用 active 參數
             return View("Index", RouteData.Values);
@@ -35,5 +35,15 @@ namespace RouteConstraint.Controllers
         {
             return View("Index", RouteData.Values);
         }
+
+        // 使用 regular expressions
+        // act => 只能是 list、get 或 create
+        // 複合條件用 : 附加上去
+        [Route("Action/{act:regex(^(list|get|create)$)}")]
+
+        public IActionResult Action(string act)
+        {
+            return View("Index", RouteData.Values);
+        }        
     }
 }
