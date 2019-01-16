@@ -1,0 +1,13 @@
+@page
+@using Microsoft.AspNetCore.Hosting
+@inject Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnv
+@model IndexModel
+@{
+}
+<h1>UseIHostingEnvironment</h1>
+<h2>Index</h2>
+<p>Model EnvironmentName : @Model.ModelEnvironmentName</p>
+<p>Page EnvironmentName : @hostingEnv.EnvironmentName</p>
+<p>IsProduction() : @hostingEnv.IsProduction()</p>
+<p>IsStaging() : @hostingEnv.IsStaging()</p>
+<p>IsDevelopment() : @hostingEnv.IsDevelopment()</p>

@@ -1,4 +1,4 @@
-# 9 個 ASP&#x2E;NET Core 的基本功 範例專案
+# 10 個 ASP&#x2E;NET Core 基本功 範例專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -95,6 +95,9 @@ dotnet run
 應用程式啟動時會讀取 ASPNETCORE_ENVIRONMENT 環境變數，可利用它來客製執行環境。
 
 平台預設支援下列三個值：Development、Staging 和 Production。如果未設定 ASPNETCORE_ENVIRONMENT，則預設為 Production。
+
+* 取得環境設定值 -- 
+[UseIHostingEnvironment](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIHostingEnvironment)
 
 * 本機開發設定值 -- 
 [LaunchSettings](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/LaunchSettings)
