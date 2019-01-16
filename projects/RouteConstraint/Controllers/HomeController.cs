@@ -9,8 +9,8 @@ namespace RouteConstraint.Controllers
           return View(RouteData.Values);
         }
 
-        // id => ¬°int,³Ì¤p­È¬°1
-        // ½Æ¦X±ø¥ó¥Î : ªş¥[¤W¥h
+        // id => ç‚ºint,æœ€å°å€¼ç‚º1
+        // è¤‡åˆæ¢ä»¶ç”¨ : é™„åŠ ä¸Šå»
         [Route("Product/{id:int:min(1)}")]
 
         public IActionResult Product(int id)
@@ -18,17 +18,17 @@ namespace RouteConstraint.Controllers
             return View("Index", RouteData.Values);
         }
 
-        // active => ¬°bool(true,FALSE)
+        // active => ç‚ºbool(true,FALSE)
         [Route("Play/{active:bool}")]
 
         public IActionResult IsGirl()
         {
-            // ¤£§Q¥Î active °Ñ¼Æ
+            // ä¸åˆ©ç”¨ active åƒæ•¸
             return View("Index", RouteData.Values);
         }
 
-        // username => ªø«×¤¶©ó2~20¤§¶¡
-        // ½Æ¦X±ø¥ó¥Î : ªş¥[¤W¥h
+        // username => é•·åº¦ä»‹æ–¼2~20ä¹‹é–“
+        // è¤‡åˆæ¢ä»¶ç”¨ : é™„åŠ ä¸Šå»
         [Route("AddUser/{username:minlength(2):maxlength(20)}")]
 
         public IActionResult AddUser(string username)
