@@ -105,6 +105,9 @@ dotnet run
 * 依環境套用的 Startup 類別
 [EnvironmentBasedStartupClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupClass)
 
+* 依環境套用的 Startup 方法
+[EnvironmentBasedStartupMethod](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupMethod)
+
 ### Web 應用程式
 
 ### Web API
