@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace EnvironmentBasedStartup
+namespace EnvironmentBasedStartupClass
 {
     public class Program
     {
@@ -17,8 +17,13 @@ namespace EnvironmentBasedStartup
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) 
+        {
+            var assemblyName = typeof(Startup).Assembly.FullName;
+
+            // 使用接受組件名稱的 UseStartup(String) 版本
+            return WebHost.CreateDefaultBuilder(args)
+                .UseStartup(assemblyName);
+        }
     }
 }

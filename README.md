@@ -102,8 +102,8 @@ dotnet run
 * 本機開發設定值 -- 
 [LaunchSettings](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/LaunchSettings)
 
-* 依環境套用的 Startup 類別和方法
-[EnvironmentBasedStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartup)
+* 依環境套用的 Startup 類別
+[EnvironmentBasedStartupClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupClass)
 
 ### Web 應用程式
 
