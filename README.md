@@ -1,4 +1,4 @@
-# 11 個 ASP&#x2E;NET Core 基本功 範例專案
+# 12 個 ASP&#x2E;NET Core 基本功 範例專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
