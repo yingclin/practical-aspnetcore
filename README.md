@@ -1,4 +1,4 @@
-# 10 個 ASP&#x2E;NET Core 基本功 範例專案
+# 11 個 ASP&#x2E;NET Core 基本功 範例專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -101,6 +101,9 @@ dotnet run
 
 * 本機開發設定值 -- 
 [LaunchSettings](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/LaunchSettings)
+
+* 依環境套用的 Startup 類別和方法
+[EnvironmentBasedStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartup)
 
 ### Web 應用程式
 
