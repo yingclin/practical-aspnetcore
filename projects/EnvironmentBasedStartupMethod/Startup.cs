@@ -14,17 +14,39 @@ namespace EnvironmentBasedStartupMethod
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddTransient<IService, ConfigureService>();
+        }
+
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            services.AddTransient<IService, ConfigureDevelopmentService>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            var service = app.ApplicationServices.GetService<IService>();
 
-            app.UseMvc();
+            app.Run(async context => await context.Response.WriteAsync($"Use {nameof(Configure)}(); get service, Type = {service.GetType().Name}"));
+        }
+
+        public void ConfigureDevelopment(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            var service = app.ApplicationServices.GetService<IService>();
+
+            app.Run(async context => await context.Response.WriteAsync($"Use {nameof(ConfigureDevelopment)}(); get service, Type = {service.GetType().Name}"));
         }
     }
+
+    #region services impl
+
+    public interface IService
+    { }
+
+    public class ConfigureDevelopmentService : IService
+    { }
+
+    public class ConfigureService : IService
+    { }
+
+    #endregion
 }
