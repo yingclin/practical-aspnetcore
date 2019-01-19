@@ -4,9 +4,16 @@
 }
 <h1>FlattenedHierarchicalKey</h1>
 <h2>Index</h2>
-<h3>Configuration keys</h3>
+<h3>Colon keys</h3>
 <ul>
     @foreach (var key in Model.GetColonKeys())
+    {
+        <li>@key</li>
+    }
+</ul>
+<h3>All keys</h3>
+<ul>
+    @foreach (var key in Model.GetAllKeys())
     {
         <li>@key</li>
     }

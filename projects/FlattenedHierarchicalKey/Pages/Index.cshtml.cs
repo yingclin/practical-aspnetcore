@@ -24,5 +24,9 @@ namespace FlattenedHierarchicalKey.Pages
             .Select(o => o.Key)
             .Where(o => o.Contains(':'))
             .ToArray();
+
+        public string[] GetAllKeys() => _configuration.AsEnumerable()
+            .Select(o => o.Key)
+            .ToArray();
     }
 }
