@@ -46,9 +46,14 @@
 
 #### 執行環境
 
-* 依環境套用的 Startup 類別
+* 依環境套用的 Startup 類別 -- 
 [EnvironmentBasedStartupClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupClass)
 
-* 依環境套用的 Startup 方法
+* 依環境套用的 Startup 方法 -- 
 [EnvironmentBasedStartupMethod](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupMethod)
+
+#### 應用程式設定
+
+* 被壓平的階層式資料 -- 
+[FlattenedHierarchicalKey](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FlattenedHierarchicalKey)
 

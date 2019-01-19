@@ -1,0 +1,13 @@
+@page
+@model IndexModel
+@{
+}
+<h1>FlattenedHierarchicalKey</h1>
+<h2>Index</h2>
+<h3>Configuration keys</h3>
+<ul>
+    @foreach (var key in Model.GetColonKeys())
+    {
+        <li>@key</li>
+    }
+</ul>

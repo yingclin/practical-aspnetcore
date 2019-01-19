@@ -1,4 +1,4 @@
-# 12 個 ASP&#x2E;NET Core 基本功 範例專案
+# 13 個 ASP&#x2E;NET Core 基本實作專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -97,16 +97,28 @@ dotnet run
 平台預設支援下列三個值：Development、Staging 和 Production。如果未設定 ASPNETCORE_ENVIRONMENT，則預設為 Production。
 
 * 取得環境設定值 -- 
-[UseIHostingEnvironment](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIHostingEnvironment)
+[UseIHostingEnvironment] (https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIHostingEnvironment)
 
 * 本機開發設定值 -- 
 [LaunchSettings](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/LaunchSettings)
 
-* 依環境套用的 Startup 類別
+* 依環境套用的 Startup 類別 -- 
 [EnvironmentBasedStartupClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupClass)
 
-* 依環境套用的 Startup 方法
+* 依環境套用的 Startup 方法 -- 
 [EnvironmentBasedStartupMethod](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupMethod)
+
+#### 應用程式設定
+
+應用程式設定是基於 `設定提供者` (Configuration Providers) 所提供的鍵值對組來建立。
+
+設定提供者會從各種來源將設定資料讀取到設定中：  
+Azure Key Vault, 命令列引數, 自訂提供者, 
+目錄檔案, 環境變數, 記憶體中的 .NET 物件, 設定檔。
+
+* 被壓平的階層式資料 -- 
+[FlattenedHierarchicalKey](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FlattenedHierarchicalKey)
+
 
 ### Web 應用程式
 
