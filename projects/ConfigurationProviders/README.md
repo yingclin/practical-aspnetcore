@@ -4,6 +4,8 @@
 
  CreateDefaultBuilder 使用的典型的提供者順序是：
 * 檔案 (appsettings.json、appsettings.{Environment}.json，其中 {Environment} 是應用程式的目前裝載環境)
-* 祕密管理員 (僅限開發環境)
+* 用戶機密 (僅限開發環境)
 * 環境變數
 * 命令列參數
+
+Program.cs 提供實作範例。
