@@ -57,3 +57,5 @@
 * 被壓平的階層式資料 -- 
 [FlattenedHierarchicalKey](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FlattenedHierarchicalKey)
 
+* 平台內建的設定提供者
+[ConfigurationProviders](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ConfigurationProviders)
