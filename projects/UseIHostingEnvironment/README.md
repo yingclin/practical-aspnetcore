@@ -2,6 +2,5 @@
 
 ASPNETCORE_ENVIRONMENT 環境變數會儲存在 IHostingEnvironment.EnvironmentName 中。
 
-```
+## 參考
 using Microsoft.AspNetCore.Hosting
-```

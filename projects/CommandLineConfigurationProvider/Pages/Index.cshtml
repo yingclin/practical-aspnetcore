@@ -4,3 +4,11 @@
 }
 <h1>CommandLineConfigurationProvider</h1>
 <h2>Index</h2>
+<h3>Command keys</h3>
+<ul>
+    @foreach (var key in Model.GetCommandKeys())
+    {
+        <li>@key</li>
+    }
+</ul>
+

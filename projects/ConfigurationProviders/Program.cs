@@ -37,9 +37,9 @@ namespace ConfigurationProviders
                 {
                     var env = hostingContext.HostingEnvironment;
 
-                    // 檔案 appsettings.json -> myAppsettings.json
-                    config.AddJsonFile("myAppsettings.json", optional: true, reloadOnChange: true)
-                          .AddJsonFile($"myAppsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                    // 檔案 appsettings.json
+                    config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                          .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
                     // 用戶機密 (僅限開發環境)
                     if (env.IsDevelopment())
@@ -59,15 +59,6 @@ namespace ConfigurationProviders
                     {
                         config.AddCommandLine(args);
                     }
-                })
-                .ConfigureLogging((hostingContext, logging) => 
-                {
-                    logging.AddConsole();
-                })
-                .UseIISIntegration()
-                .UseDefaultServiceProvider((context, options) =>
-                {
-                    options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
                 });
 
             return builder;
