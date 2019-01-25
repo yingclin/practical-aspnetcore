@@ -62,3 +62,6 @@
 
 * 命令列設定提供者 -- 
 [CommandLineConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/CommandLineConfigurationProvider)
+
+* 檔案設定提供者 -- 
+[FileConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FileConfigurationProvider)

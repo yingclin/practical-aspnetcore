@@ -1,0 +1,13 @@
+@page
+@model IndexModel
+@{
+}
+<h1>FileConfigurationProvider</h1>
+<h2>Index</h2>
+<h3>Section keys</h3>
+<ul>
+    @foreach (var key in Model.GetSectionKeys())
+    {
+        <li>@key</li>
+    }
+</ul>

@@ -1,4 +1,4 @@
-# 15 個 ASP&#x2E;NET Core 基本實作專案
+# 16 個 ASP&#x2E;NET Core 基本實作專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
@@ -125,6 +125,8 @@ Azure Key Vault, 命令列引數, 自訂提供者,
 * 命令列設定提供者 -- 
 [CommandLineConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/CommandLineConfigurationProvider)
 
+* 檔案設定提供者 -- 
+[FileConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FileConfigurationProvider)
 
 ### Web 應用程式
 
