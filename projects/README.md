@@ -68,3 +68,6 @@
 
 * 記憶體設定提供者 -- 
 [MemoryConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/MemoryConfigurationProvider)
+
+* 設定內容轉換到類別 -- 
+[ConfigurationConvertToClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ConfigurationConvertToClass)

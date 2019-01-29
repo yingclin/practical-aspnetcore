@@ -131,7 +131,7 @@ Azure Key Vault, 命令列引數, 自訂提供者,
 * 記憶體設定提供者 -- 
 [MemoryConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/MemoryConfigurationProvider)
 
-* 設定轉換到類別 -- 
+* 設定內容轉換到類別 -- 
 [ConfigurationConvertToClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ConfigurationConvertToClass)
 
 ### Web 應用程式

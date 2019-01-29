@@ -26,10 +26,8 @@ namespace ConfigurationConvertToClass.Pages
             .Where(o => o.Contains("widgets"))
             .ToArray();
 
-        // 以 Get 方式轉設定值
         public Widgets GetWidgets() => _configuration.GetSection("widgets").Get<Widgets>();
 
-        // 以 Bind 方式轉設定值
         public Widgets BindWidgets()
         {
             var widgets = new Widgets();

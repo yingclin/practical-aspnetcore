@@ -1,4 +1,4 @@
-# ³]©wÂà´«¨ìÃş§O - ConfigurationConvertToClass 
+# è¨­å®šå…§å®¹è½‰æ›åˆ°é¡åˆ¥ - ConfigurationConvertToClass 
 
-³]©w­È¥»¨Ó¬O¦^¶Ç¦r¦ê¡A¦ı¬O³z¹L `Bind()` ©Î `Get<T>()` ·|Ã´µ²¨ìª«¥ó¡C
+IConfiguration.GetSection() æ˜¯å›å‚³å­—ä¸²ï¼Œé€é `Bind(object)` æˆ– `Get<T>()` æœƒè½‰æ›åˆ°ç‰©ä»¶ã€‚
 
