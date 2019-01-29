@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
 
-namespace FileConfigurationProvider.Pages
+namespace MemoryConfigurationProvider.Pages
 {
     public class IndexModel : PageModel
     {
@@ -16,6 +16,7 @@ namespace FileConfigurationProvider.Pages
         {
             _configuration = configuration;
         }
+
         public void OnGet()
         {
         }

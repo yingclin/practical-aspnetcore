@@ -65,3 +65,6 @@
 
 * 檔案設定提供者 -- 
 [FileConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FileConfigurationProvider)
+
+* 記憶體設定提供者 -- 
+[MemoryConfigurationProvider](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/MemoryConfigurationProvider)
