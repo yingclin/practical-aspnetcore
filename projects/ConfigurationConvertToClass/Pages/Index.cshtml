@@ -1,6 +1,19 @@
 @page
 @model IndexModel
 @{
+    var getWidgets = Model.GetWidgets();
+    var bindWidgets = Model.BindWidgets();
 }
 <h1>ConfigurationConvertToClass</h1>
 <h2>Index</h2>
+<h3>Widgets keys</h3>
+<ul>
+    @foreach (var key in Model.GetWidgetsKeys())
+    {
+        <li>@key</li>
+    }
+</ul>
+<h3>Get()</h3>
+<p>@getWidgets.ToJson()</p>
+<h3>Bind()</h3>
+<p>@bindWidgets.ToJson()</p>
