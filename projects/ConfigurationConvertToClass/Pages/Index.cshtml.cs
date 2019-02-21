@@ -42,6 +42,7 @@ namespace ConfigurationConvertToClass.Pages
     {
         public Layout Layout { get; set; }
         public Display Display { get; set; }
+        public string[] Subscribers { get; set; }
 
         public string ToJson() => JsonConvert.SerializeObject(this);
     }
