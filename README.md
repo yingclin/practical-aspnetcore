@@ -1,13 +1,13 @@
-# 18 個 ASP&#x2E;NET Core 基本實作專案
+# 19 個 ASP&#x2E;NET Core 基本實作專案
 
 ## 目的
-從官方文件出發，把 ASP&#x2E;NET Core 基本功能，以實作方式記錄下來。
+從官方文件出發，把 ASP&#x2E;NET Core 功能及用法，以實作方式記錄下來。
 
 ## 環境
 
 * Windows 10
-* .NET Core SDK 2.1.503
-* VS Code 1.30.x
+* .NET Core SDK 2.1.504
+* VS Code 1.31.x
 
 ### 建立專案：
 
@@ -116,7 +116,7 @@ dotnet run
 Azure Key Vault, 命令列引數, 自訂提供者, 
 目錄檔案, 環境變數, 記憶體中的 .NET 物件, 設定檔。
 
-* 被壓平的階層式資料 -- 
+* 被壓平的階層式設定資料 -- 
 [FlattenedHierarchicalKey](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FlattenedHierarchicalKey)
 
 * 平台內建的設定提供者 -- 
@@ -135,6 +135,11 @@ Azure Key Vault, 命令列引數, 自訂提供者,
 [ConfigurationConvertToClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ConfigurationConvertToClass)
 
 ### Web 應用程式
+
+#### MVC
+
+* 從 JavaScript 傳值並載入 View components -- 
+[PassingJavascriptValuesToViewComponents](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/PassingJavascriptValuesToViewComponents)
 
 ### Web API
 

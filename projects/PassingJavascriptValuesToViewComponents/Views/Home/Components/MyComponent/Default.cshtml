@@ -1,0 +1,12 @@
+﻿@using PassingJavascriptValuesToViewComponents.ViewModels
+@model MyComponentModel
+
+@{
+    ViewData["Title"] = "View Component";
+}
+
+<h3>Result from Component: MyComponent</h3>
+
+<text><em>ScreenWidth: </em>@Model.ScreenWidth</text>
+<br />
+<text><em>Name:</em> @Model.FormData?.Name</text><br />

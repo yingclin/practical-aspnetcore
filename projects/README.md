@@ -1,16 +1,10 @@
 ## 001 - 010
 
-### 平台基礎
-
-#### 啟動
-
 * 不用 Startup.cs -- 
 [OneHostNoStartup](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OneHostNoStartup)
 
 * 用 IStartupFilter 註冊中介軟體 -- 
 [UseIStartupFilter](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIStartupFilter)
-
-#### 相依性注入
 
 * 基本相依性注入 -- 
 [DependencyInjection](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/DependencyInjection)
@@ -21,8 +15,6 @@
 * 動態建立物件 -- 
 [ActivatorUtilities](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ActivatorUtilities)
 
-#### 路由
-
 * 啟用路由中介軟體 -- 
 [UseRoutingMiddleware](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseRoutingMiddleware)
 
@@ -32,8 +24,6 @@
 * 路由的條件約束 -- 
 [RouteConstraint](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/RouteConstraint)  
 
-#### 執行環境
-
 * 取得環境設定值 -- 
 [UseIHostingEnvironment](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/UseIHostingEnvironment)
 
@@ -42,19 +32,13 @@
 
 ## 011 - 020
 
-### 平台基礎
-
-#### 執行環境
-
 * 依環境套用的 Startup 類別 -- 
 [EnvironmentBasedStartupClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupClass)
 
 * 依環境套用的 Startup 方法 -- 
 [EnvironmentBasedStartupMethod](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/EnvironmentBasedStartupMethod)
 
-#### 應用程式設定
-
-* 被壓平的階層式資料 -- 
+* 被壓平的階層式設定資料 -- 
 [FlattenedHierarchicalKey](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/FlattenedHierarchicalKey)
 
 * 平台內建的設定提供者 -- 
@@ -71,3 +55,6 @@
 
 * 設定內容轉換到類別 -- 
 [ConfigurationConvertToClass](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/ConfigurationConvertToClass)
+
+* 從 JavaScript 傳值並載入 View components -- 
+[PassingJavascriptValuesToViewComponents](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/PassingJavascriptValuesToViewComponents)

@@ -1,0 +1,68 @@
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@functions{
+    public string GetAntiXsrfRequestToken()
+    {
+        return Xsrf.GetAndStoreTokens(Context).RequestToken;
+    }
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>PassingJavascriptValuesToViewComponents</h1>
+    <h2>Index</h2>
+
+    <form id="partialformAjaxWithComponent" method="post" onsubmit="return loadComponentView(event)" asp-action="LoadComponent" asp-controller="Home">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" asp-for="Name" id="name" name="name" placeholder="Enter name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="hidden" id="RequestVerificationToken"
+               name="RequestVerificationToken" value="@GetAntiXsrfRequestToken()">
+    </form>
+    <div id="partialComponentResult"></div>
+
+    <script language="javascript">
+
+        function loadComponentView(event) {
+            event.preventDefault();
+
+            var paramsFromForm = {};
+
+            $.each($("form").serializeArray(), function (index, value) {
+                paramsFromForm[value.name] = paramsFromForm[value.name] ? paramsFromForm[value.name] || value.value : value.value;
+            });
+
+            var componentData = {};
+
+            componentData.formData = paramsFromForm;
+            componentData.screenWidth = document.documentElement.clientWidth;
+
+            $.ajax({
+                url: window.location.origin + "/Home/LoadComponent",
+                type: "post",
+                dataType: "json",
+                beforeSend: function (x) {
+                    if (x && x.overrideMimeType) {
+                        x.overrideMimeType("application/json;charset=UTF-8");
+                    };
+                    x.setRequestHeader('RequestVerificationToken', document.getElementById('RequestVerificationToken').value);
+                },
+                data: componentData,
+                complete: function (result) {
+                    console.log(result.responseText);
+                    $("#partialComponentResult").html(result.responseText);
+                }
+            });
+
+            return false;
+        };
+    </script>
+</body>
+</html>
+
