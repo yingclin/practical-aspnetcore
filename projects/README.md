@@ -61,3 +61,9 @@
 
 * 基本的選項設定 --
 [SimpleOptions](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/SimpleOptions)
+
+## 021 - 030
+
+* 使用委派(delegate)來設定簡單的選項 --
+[OptionsConfiguredByDelegate](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OptionsConfiguredByDelegate)
+
