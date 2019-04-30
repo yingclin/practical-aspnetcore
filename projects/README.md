@@ -58,3 +58,6 @@
 
 * 從 JavaScript 傳值並載入 View components -- 
 [PassingJavascriptValuesToViewComponents](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/PassingJavascriptValuesToViewComponents)
+
+* 基本的選項設定 --
+[SimpleOptions](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/SimpleOptions)
