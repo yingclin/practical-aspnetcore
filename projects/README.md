@@ -69,3 +69,6 @@
 
 * 022 使用 IOptionsSnapshot 重新載入設定資料 --
 [SnapshotOptions](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/SnapshotOptions)
+
+* 023 使用 IConfigureNamedOptions 取得具名選項值 --
+[NamedOptions](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/NamedOptions)
