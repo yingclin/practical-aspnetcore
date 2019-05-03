@@ -1,4 +1,4 @@
-# 21 個 ASP&#x2E;NET Core 基本實作專案
+# 22 個 ASP&#x2E;NET Core 基本實作專案
 
 ## 目的
 從官方文件出發，把 ASP&#x2E;NET Core 功能及用法，以實作方式記錄下來。
@@ -6,8 +6,8 @@
 ## 環境
 
 * Windows 10
-* .NET Core SDK 2.1.504
-* VS Code 1.31.x
+* .NET Core SDK 2.1.505
+* VS Code 1.33.x
 
 ### 建立專案：
 
@@ -141,6 +141,10 @@ Azure Key Vault, 命令列引數, 自訂提供者,
 
 * 使用委派(delegate)來設定簡單的選項 --
 [OptionsConfiguredByDelegate](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/OptionsConfiguredByDelegate)
+
+* 使用 IOptionsSnapshot 重新載入設定資料 --
+[SnapshotOptions](https://github.com/yingclin/practical-aspnetcore/tree/master/projects/SnapshotOptions)
+
 
 ### Web 應用程式
 

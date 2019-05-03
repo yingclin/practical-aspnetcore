@@ -15,7 +15,7 @@ namespace OptionsConfiguredByDelegate
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            // §Q¥Î delegate ¨Ó·s¼W Options, ¨Ã³]­È
+            // ç”¨ delegate åˆå§‹åŒ– Options.
             services.Configure<MyOptionsWithDelegateConfig>(myOptions =>
             {
                 myOptions.Option1 = "value1_configured_by_delegate";
